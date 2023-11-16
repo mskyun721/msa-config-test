@@ -5,7 +5,8 @@ eureka.client.fetch-registry=false
 # 유레카 서비스에 (자신을) 등록하지 않는다. (클러스터 모드가 아니므로) -> false 로 해도 피어링이 된다. eureka.client.fetch-registry=false
 # 레지스트리 정보를 로컬에 캐싱하지 않는다. (클러스터 모드가 아니므로) eureka.client.serviceUrl.defaultZone=http://peer1:8762/eureka/
 
-management.endpoints.web.exposure.include=* management.endpoints.enabled-by-default=true
+management.endpoints.web.exposure.include=* 
+management.endpoints.enabled-by-default=true
 eureka.server.wait-time-in-ms-when-sync-empty=5
 # Eureka Server 가 시작되고 Peer nodes 로부터 Instance 들을 가져올 수 없을 때 얼마나 기다릴 것인가? (디폴트 3000ms, 운영 환경에선 삭제 필요)
 # 일시적인 네트워크 장애로 인한 서비스 해제 막기 위한 보호모드 해제 (디폴트 60초, 운영에선 삭제 필요)
